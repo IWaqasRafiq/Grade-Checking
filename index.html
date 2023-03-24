@@ -10,12 +10,42 @@
 </head>
 <body>
   <div class="container">
-    <h1 class="text-center my-5">Grade Percentage Calculator</h1>
+    <h1 class="text-left my-5">Percentage Calculator</h1>
     <form>
       <div class="form-group row">
-        <label for="grade" class="col-sm-2 col-form-label">Grade:</label>
-        <div class="col-sm-5">
-          <input type="number" id="grade" name="grade" min="0" max="100" class="form-control">
+        <label for="ObtainedMarks"  class="col-sm-2 col-form-label">Obtained Marks:</label>
+        <div class="col-sm-2">
+          <input type="number" id="obtainedmarks" name="obtainedmarks" class="form-control">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="TotalMarks"  class="col-sm-2 col-form-label">Total Marks:</label>
+        <div class="col-sm-2">
+          <input type="number" id="totalmakrs" name="totalmakrs" class="form-control">
+        </div>
+      </div>
+
+      <div class="form-group row">
+        <div class="col-sm-10 offset-sm-2">
+          <button type="button" onclick="calculateGrade()" class="btn btn-primary mt-3">Calculate</button>
+        </div>
+      </div>
+
+      <div class="form-group row">
+        <label for="Percentage" class="col-sm-2 col-form-label"> Percentage :</label>
+        <div class="col-sm-2">
+          <input type="text" id="Percentage" name="Percentage" readonly class="form-control">
+        </div>
+      </div>
+    </form>
+  </div>
+  <div class="container">
+    <h1 class="text-left my-5">Grade Calculator</h1>
+    <form>
+      <div class="form-group row">
+        <label for="percentage"  class="col-sm-2 col-form-label">Percentage:</label>
+        <div class="col-sm-2">
+          <input type="number" id="percentage" name="percentage" min="0" max="100" class="form-control">
         </div>
       </div>
 
@@ -26,9 +56,9 @@
       </div>
 
       <div class="form-group row">
-        <label for="percentage" class="col-sm-2 col-form-label">Percentage Grade:</label>
-        <div class="col-sm-5">
-          <input type="text" id="percentage" name="percentage" readonly class="form-control">
+        <label for="grade" class="col-sm-2 col-form-label">Grade:</label>
+        <div class="col-sm-4">
+          <input type="text" id="grade" name="grade" readonly class="form-control">
         </div>
       </div>
     </form>
